@@ -25,7 +25,7 @@ header {
 h1 span {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 3rem;
-    text-shadow: 1px 1px 1px blue;
+    text-shadow: 1px 1px 1px rgb(25, 25, 151);
 }
 
 .input-windows {
