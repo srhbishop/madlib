@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Madlib</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+
+        <header>
+            <h1>
+                Song Rewrites: <span>MadLib</span> Style
+            </h1>
+            <h3><i class="fas fa-pencil-alt"></i> Fill in the blanks and click the arrow button. <i class="fas fa-pencil-alt"></i></h3>
+        </header>
+        <div class="input-windows">
+            <div class="window active">
+                <input type="text" class="user-input" placeholder="Noun" required>  
+                <i class="fa fa-arrow-circle-right next-btn"></i>
+            </div>
+            <div class="window">
+                <input type="text" class="user-input" placeholder="Color" required>
+                <i class="fa fa-arrow-circle-right next-btn"></i>
+            </div>
+            <div class="window">
+                <input type="text" class="user-input" placeholder="Adjective" required>
+                <i class="fa fa-arrow-circle-right next-btn"></i>
+            </div>
+            <div class="window">
+                <input type="text" class="user-input" placeholder="Plural noun" required> 
+                <i class="fa fa-arrow-circle-right next-btn"></i>
+            </div>
+            <div class="window">
+                <input type="text" class="user-input" placeholder="Something you see" required> 
+                <i class="fa fa-arrow-circle-right next-btn"></i>
+            </div>
+            <div class="window">
+                <input type="text" class="user-input" placeholder="Adjective" required> 
+                <i class="fa fa-arrow-circle-right submit-btn"></i>
+            </div>
+        </div>
+        <div class="results">
+            <p class="print">
+
+                <p class="song-info">
+                    Credits: "What a Wonderful World" (Louis Armstrong)
+                </p>
+        
+            </p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

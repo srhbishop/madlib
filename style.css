@@ -1,0 +1,126 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(158, 158, 252);
+}
+
+.app {
+    height: 100vh;
+    position: relative;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+header {
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+h1 span {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px blue;
+}
+
+.input-windows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.window.active {
+    opacity: 1;
+    z-index: 20;
+    height: 100px;
+    transition: 1s ease-in-out;
+}
+
+.window {
+    opacity: 0;
+    height: 0px; 
+}
+
+.disappear {
+    display: none;
+}
+
+.user-input {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: .2em;
+    font-size: 2rem;
+    background-color: rgb(236, 233, 233);
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.next-btn {
+    font-size: 1.7rem;
+}
+
+.next-btn:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.submit-btn {
+    opacity: 0;
+    height: 0px;
+}
+
+.submit-btn.active{
+    opacity: 1;
+    font-size: 1.7rem;
+    transition: 1s ease-in-out;
+}
+
+.submit-btn.active:hover {
+    cursor: pointer;
+}
+
+.next-btn {
+    z-index: 50;
+}
+
+.results {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.4rem;
+}
+
+.print {
+    transform: translateY(100px);
+    transition: 1s ease-in-out;
+    opacity: 0;
+}
+
+.print.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.song-info {
+    transform: translateY(100px);
+    transition: 1s ease-in-out;
+    opacity: 0;
+    font-size: 1rem;
+}
+
+.song-info.active {
+    transform: translateY(0);
+    opacity: 1;
+    padding-top: 50px;
+}
